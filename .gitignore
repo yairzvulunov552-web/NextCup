@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secrets — never commit keys or passwords
+.env
+.streamlit/secrets.toml
+*.key
+
+# Raw NHANES downloads (~145 MB). Rebuild with: python data/prepare_data.py
+data/raw/
+
+# Trained models / large files
+*.pkl
+*.joblib
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
