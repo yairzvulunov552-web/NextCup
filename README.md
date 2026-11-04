@@ -6,6 +6,8 @@
 
 🔗 **האפליקציה הראשונה: [NextCup בדפדפן](https://claude.ai/artifact/VYtcfAC9qJo8xFCdsj6svG?sk=XIbohddQbr__oy00HdKXfg)**. מחשבון ״הקפה הבא״, היסטוגרמה של שעות השתייה, הנתונים ומפת הדרכים. נפתח בלי התקנה ובלי התחברות.
 
+📁 **הריפו של הצוות:** [github.com/yairzvulunov552-web/NextCup](https://github.com/yairzvulunov552-web/NextCup)
+
 ---
 
 ## משפט הפרויקט
