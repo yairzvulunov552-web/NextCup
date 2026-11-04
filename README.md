@@ -4,7 +4,7 @@
 
 אפליקציה שלומדת מתי אנשים שותים קפאין לאורך היום, וחוזה מתי תגיע הכוס הבאה שלכם, כדי שתוכלו לתכנן אותה במקום לשתות מתוך הרגל.
 
-🔗 **[לגרסת הווב של NextCup](https://claude.ai/artifact/VYtcfAC9qJo8xFCdsj6svG?sk=XIbohddQbr__oy00HdKXfg)**: מחשבון ״הקפה הבא״, היסטוגרמת שעות השתייה, הנתונים ומפת הדרכים, בלי התקנה.
+🔗 **האפליקציה הראשונה: [NextCup בדפדפן](https://claude.ai/artifact/VYtcfAC9qJo8xFCdsj6svG?sk=XIbohddQbr__oy00HdKXfg)**. מחשבון ״הקפה הבא״, היסטוגרמה של שעות השתייה, הנתונים ומפת הדרכים. נפתח בלי התקנה ובלי התחברות.
 
 ---
 
@@ -35,9 +35,9 @@
   [שמות מזונות](https://wwwn.cdc.gov/Nchs/Data/Nhanes/Public/2017/DataFiles/DRXFCD_J.xpt) ·
   [תיעוד](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?BeginYear=2017)
 - **הקובץ הגולמי (יום 1):** 112,683 שורות × 84 עמודות, 7,640 משתתפים. ב־973 שורות חסרים ערכים תזונתיים (כולל קפאין).
-- **הקובץ שלנו** [`data/caffeine_events.csv`](data/caffeine_events.csv): **11,703 שורות × 11 עמודות**, שורה לכל משקה עם קפאין (10 מ״ג ומעלה) שבגיר שתה. **4,013 אנשים**, 6,673 ימי דיווח, ממוצע של 1.75 משקאות ליום. **אין חוסרים** אחרי הסינון.
+- **הקובץ שלנו** `data/caffeine_events.csv`: **11,703 שורות × 11 עמודות**, שורה לכל משקה עם קפאין (10 מ״ג ומעלה) שבגיר שתה. **4,013 אנשים**, 6,673 ימי דיווח, ממוצע של 1.75 משקאות ליום. **אין חוסרים** אחרי הסינון.
 - **עמודות:** `person_id`, `recall_day`, `weekday`, `time`, `hour`, `category` (קפה / תה / שתייה קלה / אנרגיה), `item`, `caffeine_mg`, `occasion` (בוקר / צהריים / נשנוש…), `age`, `sex`.
-- **פירוט מלא ושחזור:** [`data/README.md`](data/README.md). בונים את הקובץ מחדש עם `python data/prepare_data.py`.
+- **פירוט מלא ושחזור:** `data/README.md`. בונים את הקובץ מחדש עם `python data/prepare_data.py`.
 
 ## מה האפליקציה תציג
 
@@ -93,7 +93,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-יש גם גרסת ווב להצגה שלא דורשת התקנה: [פתיחה בדפדפן](https://claude.ai/artifact/VYtcfAC9qJo8xFCdsj6svG?sk=XIbohddQbr__oy00HdKXfg) (קוד המקור: [`artifact/nextcup.html`](artifact/nextcup.html)).
+יש גם גרסת ווב להצגה שלא דורשת התקנה: [פתיחה בדפדפן](https://claude.ai/artifact/VYtcfAC9qJo8xFCdsj6svG?sk=XIbohddQbr__oy00HdKXfg) (קוד המקור: `artifact/nextcup.html`).
 
 הקובץ `data/caffeine_events.csv` כבר נמצא בריפו. לבנייה מחדש מהמקור: `python data/prepare_data.py`.
 
